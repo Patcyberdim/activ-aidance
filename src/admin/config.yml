@@ -30,19 +30,9 @@ collections:
     format: frontmatter
     summary: "{{date}} — {{title}}"
     sortable_fields: ["date", "title"]
-    view_filters:
-      - label: Santé mentale
+    view_groups:
+      - label: Par thème
         field: theme
-        pattern: "Santé mentale"
-      - label: Accompagnement
-        field: theme
-        pattern: "Accompagnement"
-      - label: Éducation et apprentissage
-        field: theme
-        pattern: "Éducation et apprentissage"
-      - label: Culture
-        field: theme
-        pattern: "Culture"
     fields:
       - { label: Titre, name: title, widget: string }
       - label: Date de publication
@@ -54,18 +44,17 @@ collections:
         picker_utc: true
       - label: Thème
         name: theme
-        widget: select
-        options:
-          - Santé mentale
-          - Accompagnement
-          - Éducation et apprentissage
-          - Culture
+        widget: relation
+        collection: pages
+        file: themes
+        search_fields: ["themes.*.nom"]
+        value_field: "themes.*.nom"
+        display_fields: ["themes.*.nom"]
+        hint: "La liste des thèmes se modifie dans « Pages et réglages », « Thèmes des articles »."
       - label: Tags
         name: etiquettes
-        widget: list
+        widget: etiquettes
         required: false
-        hint: "Un ou plusieurs mots-clés. Cliquez sur « Ajouter » pour chaque tag."
-        field: { label: Tag, name: tag, widget: string }
       - label: Résumé
         name: summary
         widget: text
@@ -114,6 +103,18 @@ collections:
               - { label: Texte, name: label, widget: string }
               - { label: Adresse, name: url, widget: string }
               - { label: Description, name: description, widget: string, required: false }
+      - name: themes
+        label: Thèmes des articles
+        file: src/_data/themes.json
+        fields:
+          - label: Thèmes
+            name: themes
+            widget: list
+            label_singular: thème
+            summary: "{{fields.nom}}"
+            hint: "Ajouter, renommer ou supprimer des thèmes. Avant de supprimer ou renommer un thème, changer le thème des articles qui l'utilisent."
+            fields:
+              - { label: Nom du thème, name: nom, widget: string }
       - name: reglages
         label: Réglages du site
         file: src/_data/site.json
