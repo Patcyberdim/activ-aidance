@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (title + " – " + site.name) if title else site.name %}
+  {%- set pageDescription = summary or site.description %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  {%- if site.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
+  {%- if env.url %}
+  <link rel="canonical" href="{{ env.url }}{{ page.url }}">
+  {%- endif %}
+
+  <meta property="og:type" content="{{ 'article' if section == 'articles' and page.url != '/' else 'website' }}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  {%- if env.url %}
+  <meta property="og:url" content="{{ env.url }}{{ page.url }}">
+  {%- endif %}
+  {%- if image and env.url %}
+  <meta property="og:image" content="{{ env.url }}{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- else %}
+  <meta name="twitter:card" content="summary">
+  {%- endif %}
+
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/themes/{{ site.theme or 'defaut' }}.css" id="theme-css">
+  {%- if env.dev %}
+  <script>
+    try {
+      var t = localStorage.getItem("themePreview");
+      if (t) document.getElementById("theme-css").href = "/css/themes/" + t + ".css";
+    } catch (e) {}
+  </script>
+  {%- endif %}
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="/">
+        {{ site.name }}
+        <span class="site-tagline">{{ site.tagline }}</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="/"{% if section == "articles" %} aria-current="page"{% endif %}>Articles</a>
+        <a href="/categories/"{% if section == "categories" %} aria-current="page"{% endif %}>Catégories</a>
+        <a href="/a-propos/"{% if section == "apropos" %} aria-current="page"{% endif %}>À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="wrap">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclaimer">{{ site.disclaimer }}</p>
+      <p class="copyright">© {{ env.year }} {{ site.name }}</p>
+    </div>
+  </footer>
+
+  {%- if env.dev %}
+  <div class="theme-switcher" data-theme-switcher>
+    <strong>Aperçu du style :</strong>
+    <button type="button" data-style="defaut">Actuel</button>
+    <button type="button" data-style="blanc">Blanc épuré</button>
+    <button type="button" data-style="blanc-arrondi">Blanc arrondi</button>
+    <button type="button" data-style="pastel">Pastel zen</button>
+    <button type="button" data-style="moderne">Moderne</button>
+    <button type="button" data-style="joyeux">Coloré</button>
+  </div>
+  {%- endif %}
+
+  <script src="/js/main.js" defer></script>
+  {%- if section == "categories" %}
+  <script src="/js/categories.js" defer></script>
+  {%- endif %}
+</body>
+</html>

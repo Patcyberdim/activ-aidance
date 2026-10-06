@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+---
+{%- set articleUrl = env.url + page.url %}
+{%- set newer = collections.articles | adjacent(page.url, -1) %}
+{%- set older = collections.articles | adjacent(page.url, 1) %}
+
+<article class="article narrow">
+  <header class="article-header">
+    <p class="meta">
+      <a class="chip chip-theme" data-theme="{{ theme }}" href="/categories/?theme={{ theme | urlencode }}">{{ theme }}</a>
+      <time datetime="{{ page.date | dateIso }}">{{ page.date | dateFr }}</time>
+    </p>
+    <h1>{{ title }}</h1>
+    {%- if summary %}<p class="lede">{{ summary }}</p>{% endif %}
+  </header>
+
+  {%- if image %}
+  <figure class="article-figure">
+    <img src="{{ image }}" alt="{{ imageAlt or '' }}">
+  </figure>
+  {%- endif %}
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {%- if liens and liens.length %}
+  <section class="article-links" aria-labelledby="liens-titre">
+    <h2 id="liens-titre">Pour aller plus loin</h2>
+    <ul>
+      {%- for lien in liens %}
+      <li><a href="{{ lien.url }}" rel="noopener" target="_blank">{{ lien.label or lien.url }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if etiquettes and etiquettes.length %}
+  <ul class="chips" aria-label="Tags">
+    {%- for tag in etiquettes %}
+    <li><a class="chip" href="/categories/?tag={{ tag | urlencode }}">{{ tag }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  <section class="share" aria-labelledby="partager-titre">
+    <h2 id="partager-titre">Partager cet article</h2>
+    <ul class="share-list">
+      <li><a class="btn" data-share-facebook href="https://www.facebook.com/sharer/sharer.php?u={{ articleUrl | urlencode }}" target="_blank" rel="noopener">Facebook</a></li>
+    </ul>
+  </section>
+
+  {%- if newer or older %}
+  <nav class="pager" aria-label="Autres articles">
+    {%- if older %}
+    <a class="pager-prev" href="{{ older.url }}"><span>← Article précédent</span>{{ older.data.title }}</a>
+    {%- endif %}
+    {%- if newer %}
+    <a class="pager-next" href="{{ newer.url }}"><span>Article suivant →</span>{{ newer.data.title }}</a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</article>

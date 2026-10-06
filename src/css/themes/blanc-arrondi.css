@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Style « Blanc arrondi » — « Blanc épuré » avec des cadres arrondis
+   (cartes, filtres, champs et boutons) comme dans le style Moderne.
+   ========================================================================== */
+
+@import url("blanc.css");
+
+:root { --radius: 14px; }
+
+/* Articles : de vrais cadres arrondis avec ombre légère */
+.card-list { gap: 1.75rem; }
+.card,
+.card:first-child {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(20, 26, 43, 0.04), 0 10px 28px rgba(20, 26, 43, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 2px rgba(20, 26, 43, 0.05), 0 16px 36px rgba(20, 26, 43, 0.1);
+}
+.card-body { padding: 1.5rem 1.7rem 1.7rem; }
+.card-image img { aspect-ratio: 16 / 9; }
+
+/* Étiquettes, boutons, navigation entre articles */
+.chip { border-radius: 10px; }
+.btn { border-radius: 10px; }
+.pager a { border-radius: 14px; }
+.pager a:hover { box-shadow: 0 8px 24px rgba(20, 26, 43, 0.08); }
+
+/* Images et citations */
+.article-figure img, .prose img { border-radius: 16px; }
+.prose blockquote { border-radius: 0 12px 12px 0; background: var(--accent-soft); padding: 0.8rem 1.25rem; }
+
+/* Page Catégories */
+.filters { border-radius: 18px; border-top: 0; box-shadow: 0 10px 28px rgba(20, 26, 43, 0.05); }
+.field input { border-radius: 12px; }
+.field input:focus { box-shadow: 0 0 0 4px var(--accent-soft); }
+.empty { border-radius: 12px; }
+.tl-item::before { border-radius: 50%; width: 10px; height: 10px; left: calc(-1.25rem - 6px); }
+
+/* À propos / liens */
+.article-links, .share { border-radius: 16px; }

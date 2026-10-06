@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<div class="narrow">
+  <h1>{{ title }}</h1>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {%- if contact and contact.length %}
+  <section class="about-block" aria-labelledby="contact-titre">
+    <h2 id="contact-titre">Me contacter</h2>
+    <ul class="link-list">
+      {%- for item in contact %}
+      <li><a href="{{ item.url }}" rel="noopener">{{ item.label or item.url }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if liens and liens.length %}
+  <section class="about-block" aria-labelledby="utiles-titre">
+    <h2 id="utiles-titre">Liens utiles</h2>
+    <ul class="link-list">
+      {%- for item in liens %}
+      <li>
+        <a href="{{ item.url }}" rel="noopener">{{ item.label or item.url }}</a>
+        {%- if item.description %}<span class="link-desc">{{ item.description }}</span>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</div>

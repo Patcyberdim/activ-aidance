@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Style « Moderne » — clair, professionnel, très actuel
+   ========================================================================== */
+
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #576179;
+  --accent: #2f4fe0;
+  --accent-contrast: #ffffff;
+  --accent-soft: #e8ecff;
+  --border: #e2e7f1;
+  --radius: 14px;
+  --font-ui: Inter, "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-read: var(--font-ui);
+  color-scheme: light;
+}
+
+body { letter-spacing: -0.01em; }
+
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.03em; }
+h1 { font-size: 2.3rem; }
+
+/* En-tête collant, translucide */
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(255, 255, 255, 0.82); backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.site-name { font-weight: 800; letter-spacing: -0.04em; font-size: 1.3rem; }
+.site-name::before {
+  content: ""; display: inline-block; width: 0.7em; height: 0.7em; margin-right: 0.45em;
+  border-radius: 30%; background: linear-gradient(135deg, #2f4fe0, #19b6d6);
+}
+.site-name { display: block; }
+.site-tagline { display: block; margin-left: 1.15em; }
+
+/* Navigation en « segmented control » */
+.main-nav { background: #edf0f8; padding: 4px; border-radius: 999px; gap: 2px; }
+.main-nav a { font-weight: 600; font-size: 0.9rem; color: var(--muted); padding: 0.4rem 1rem; }
+.main-nav a:hover { background: transparent; color: var(--text); }
+.main-nav a[aria-current="page"] {
+  background: #fff; color: var(--accent); box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+/* Titres de page avec filet dégradé */
+.page-title::after {
+  content: ""; display: block; width: 3.5rem; height: 4px; margin-top: 0.7rem;
+  border-radius: 4px; background: linear-gradient(90deg, #2f4fe0, #19b6d6);
+}
+
+/* Cartes */
+.card {
+  border: 1px solid var(--border); border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 10px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 16px 36px rgba(15, 23, 42, 0.1); }
+.card-title { font-weight: 700; letter-spacing: -0.03em; }
+.card-summary { font-family: var(--font-ui); color: var(--muted); }
+.read-more { font-weight: 600; text-decoration: none; }
+.read-more::after { content: " →"; }
+
+.chip { border-radius: 8px; font-size: 0.8rem; }
+.chip-theme { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.chip-toggle[aria-pressed="true"] { box-shadow: 0 4px 12px rgba(47, 79, 224, 0.3); }
+.btn { border-radius: 10px; font-weight: 600; }
+.btn:hover { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+
+/* Article */
+.article-header h1 { font-size: 2.4rem; line-height: 1.15; }
+.lede { font-family: var(--font-ui); font-size: 1.2rem; }
+.prose { font-size: 1.05rem; line-height: 1.8; }
+.prose blockquote { border-left-color: var(--accent); background: var(--accent-soft); border-radius: 0 12px 12px 0; font-style: normal; color: var(--text); padding: 0.8rem 1.25rem; }
+.article-figure img, .prose img { border-radius: 16px; }
+.pager a { border-radius: 14px; }
+.pager a:hover { box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); }
+
+/* Catégories */
+.filters { border-radius: 18px; box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05); }
+.field input { border-radius: 12px; background: #f8f9fd; }
+.field input:focus { background: #fff; box-shadow: 0 0 0 4px var(--accent-soft); }
+.empty { border-radius: 12px; }
+.tl-list { border-left: 2px solid var(--border); }
+.tl-item::before { background: #fff; border: 3px solid var(--accent); box-shadow: none; width: 12px; height: 12px; left: calc(-1.25rem - 7px); top: 1.1rem; }
+.tl-theme { color: var(--accent); }
+
+/* Pied de page */
+.site-footer { background: #fff; }

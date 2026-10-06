@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Style « Coloré » — joyeux et chaleureux, tout en restant professionnel
+   Chaque thème d'article a sa couleur.
+   ========================================================================== */
+
+:root {
+  --bg: #fffaf2;
+  --surface: #ffffff;
+  --text: #1d2742;
+  --muted: #566080;
+  --accent: #c2410c;
+  --accent-contrast: #ffffff;
+  --accent-soft: #ffe9d9;
+  --border: #f0e4d3;
+  --radius: 16px;
+  --navy: #1d2742;
+  --font-ui: "Trebuchet MS", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  --font-read: "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  color-scheme: light;
+}
+
+/* Une couleur par thème (se retrouve sur les cartes, étiquettes et la timeline) */
+[data-theme="Santé mentale"]              { --tc: #6d4bd1; --tcs: #ece6fb; }
+[data-theme="Accompagnement"]             { --tc: #0f766e; --tcs: #d9f2ee; }
+[data-theme="Éducation et apprentissage"] { --tc: #c2410c; --tcs: #ffe9d9; }
+[data-theme="Culture"]                    { --tc: #be185d; --tcs: #fde4ef; }
+
+h1, h2, h3 { font-weight: 800; letter-spacing: -0.015em; }
+h1 { font-size: 2.2rem; }
+
+/* En-tête avec bandeau multicolore */
+.site-header {
+  background: #fff; border-bottom: 0; box-shadow: 0 2px 0 var(--border);
+  border-top: 6px solid transparent;
+  border-image: linear-gradient(90deg, #6d4bd1, #be185d, #f4a52c, #c2410c, #0f766e) 1;
+}
+.site-name { font-weight: 800; font-size: 1.45rem; color: var(--navy); }
+.site-tagline { color: var(--muted); }
+.main-nav a { font-weight: 700; color: var(--navy); }
+.main-nav a:hover { background: var(--accent-soft); }
+.main-nav a[aria-current="page"] { background: var(--navy); color: #fff; }
+
+.page-title::after {
+  content: ""; display: block; width: 5rem; height: 5px; margin-top: 0.6rem; border-radius: 5px;
+  background: linear-gradient(90deg, #6d4bd1, #be185d, #f4a52c, #0f766e);
+}
+
+/* Cartes colorées selon le thème */
+.card {
+  border: 1px solid var(--border); border-top: 6px solid var(--tc, var(--accent));
+  border-radius: var(--radius); box-shadow: 0 6px 20px rgba(29, 39, 66, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(29, 39, 66, 0.12); }
+.card-title a { color: var(--navy); }
+.card-title a:hover { color: var(--tc, var(--accent)); }
+.card-summary { font-family: var(--font-ui); }
+.read-more { color: var(--tc, var(--accent)); font-weight: 700; }
+.read-more::after { content: " →"; }
+
+.chip { border-radius: 999px; }
+.chip-theme { background: var(--tcs, var(--accent-soft)); color: var(--tc, var(--accent)); font-weight: 700; }
+.chip-toggle[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn { border-radius: 999px; font-weight: 700; border-width: 2px; border-color: var(--navy); color: var(--navy); }
+.btn:hover { background: var(--navy); color: #fff; }
+
+/* Article */
+.article-header h1 { font-size: 2.4rem; line-height: 1.2; color: var(--navy); }
+.lede { font-family: var(--font-ui); }
+.prose { font-size: 1.05rem; line-height: 1.8; }
+.prose h2 { color: var(--navy); }
+.prose blockquote { border-left-color: #f4a52c; background: #fff3d6; border-radius: 0 14px 14px 0; font-style: normal; color: var(--text); padding: 0.8rem 1.25rem; }
+.article-figure img, .prose img { border-radius: 18px; }
+.pager a { border-radius: var(--radius); border-width: 2px; }
+.pager a:hover { border-color: var(--navy); }
+.article-links { background: #fff3d6; border-radius: var(--radius); padding: 1.2rem 1.5rem; }
+
+/* Catégories */
+.filters { border-radius: 20px; border: 2px solid var(--border); }
+.field input { border-radius: 999px; padding: 0.75rem 1.2rem; border-width: 2px; }
+.field input:focus { border-color: var(--navy); }
+.empty { border-radius: 14px; background: #fff3d6; }
+.tl-list { border-left: 3px dotted #e5d5bc; }
+.tl-item::before { background: var(--tc, var(--accent)); width: 12px; height: 12px; left: calc(-1.25rem - 7.5px); top: 1.1rem; }
+.tl-theme { color: var(--tc, var(--accent)); }
+.year-title { color: var(--navy); }
+
+/* Pied de page sombre */
+.site-footer { background: var(--navy); border-top: 0; color: #d6dcf0; margin-top: 2rem; }
+.site-footer a { color: #fff; }

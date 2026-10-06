@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: Catégories
+section: categories
+permalink: /categories/
+---
+<div class="narrow">
+  <h1 class="page-title">Catégories</h1>
+
+  <form class="filters" data-filters role="search" aria-label="Rechercher et filtrer les articles">
+    <div class="field">
+      <label for="q">Rechercher un mot dans les titres et les articles</label>
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Par exemple : anxiété, mémoire…">
+    </div>
+
+    {%- if collections.themes.length %}
+    <fieldset class="chip-group">
+      <legend>Thèmes</legend>
+      <div class="chips">
+        {%- for theme in collections.themes %}
+        <button class="chip chip-toggle" type="button" data-theme-btn="{{ theme }}" aria-pressed="false">{{ theme }}</button>
+        {%- endfor %}
+      </div>
+    </fieldset>
+    {%- endif %}
+
+    {%- if collections.tagList.length %}
+    <fieldset class="chip-group">
+      <legend>Tags <span class="legend-hint">(plusieurs choix possibles)</span></legend>
+      <div class="chips">
+        {%- for tag in collections.tagList %}
+        <button class="chip chip-toggle" type="button" data-tag-btn="{{ tag }}" aria-pressed="false">{{ tag }}</button>
+        {%- endfor %}
+      </div>
+    </fieldset>
+    {%- endif %}
+
+    <div class="filters-footer">
+      <p class="status" data-status role="status" aria-live="polite"></p>
+      <button class="btn btn-quiet" type="button" data-reset hidden>Tout réinitialiser</button>
+    </div>
+  </form>
+
+  <p class="empty" data-empty hidden>Aucun article ne correspond à votre sélection.</p>
+
+  <div class="timeline">
+    {%- for group in collections.articlesByYear %}
+    <section class="year" data-year aria-labelledby="annee-{{ group.year }}">
+      <h2 class="year-title" id="annee-{{ group.year }}">{{ group.year }}</h2>
+      <ol class="tl-list">
+        {%- for post in group.items %}
+        <li class="tl-item"
+            data-url="{{ post.url }}"
+            data-title="{{ post.data.title }}"
+            data-theme="{{ post.data.theme }}"
+            data-tags="{{ (post.data.etiquettes or []) | dump }}">
+          <time datetime="{{ post.date | dateIso }}">{{ post.date | dateFr }}</time>
+          <a class="tl-title" href="{{ post.url }}">{{ post.data.title }}</a>
+          <span class="tl-theme">{{ post.data.theme }}</span>
+        </li>
+        {%- endfor %}
+      </ol>
+    </section>
+    {%- endfor %}
+  </div>
+</div>

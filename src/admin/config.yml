@@ -1,0 +1,137 @@
+# Configuration de l'interface d'écriture (Decap CMS) — accessible sur /admin/
+
+backend:
+  name: github
+  repo: Patcyberdim/activ-aidance
+  branch: main
+
+# Permet de tester l'administration en local (npm run cms) sans GitHub.
+local_backend: true
+
+locale: fr
+site_url: https://activ-aidance.netlify.app
+display_url: https://activ-aidance.netlify.app
+
+media_folder: src/images/uploads
+public_folder: /images/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: articles
+    label: Articles
+    label_singular: Article
+    folder: src/articles
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "{{date}} — {{title}}"
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - label: Santé mentale
+        field: theme
+        pattern: "Santé mentale"
+      - label: Accompagnement
+        field: theme
+        pattern: "Accompagnement"
+      - label: Éducation et apprentissage
+        field: theme
+        pattern: "Éducation et apprentissage"
+      - label: Culture
+        field: theme
+        pattern: "Culture"
+    fields:
+      - { label: Titre, name: title, widget: string }
+      - label: Date de publication
+        name: date
+        widget: datetime
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        format: "YYYY-MM-DD"
+        picker_utc: true
+      - label: Thème
+        name: theme
+        widget: select
+        options:
+          - Santé mentale
+          - Accompagnement
+          - Éducation et apprentissage
+          - Culture
+      - label: Tags
+        name: etiquettes
+        widget: list
+        required: false
+        hint: "Un ou plusieurs mots-clés. Cliquez sur « Ajouter » pour chaque tag."
+        field: { label: Tag, name: tag, widget: string }
+      - label: Résumé
+        name: summary
+        widget: text
+        required: false
+        hint: "Quelques phrases affichées dans la liste des articles. Si vide, le début de l'article est utilisé."
+      - { label: Image principale, name: image, widget: image, required: false }
+      - label: Description de l'image
+        name: imageAlt
+        widget: string
+        required: false
+        hint: "Décrit l'image pour les personnes malvoyantes."
+      - label: Liens "Pour aller plus loin"
+        name: liens
+        widget: list
+        required: false
+        fields:
+          - { label: Texte du lien, name: label, widget: string }
+          - { label: Adresse (https://…), name: url, widget: string }
+      - { label: Texte de l'article, name: body, widget: markdown }
+
+  - name: pages
+    label: Pages et réglages
+    files:
+      - name: a-propos
+        label: Page « À propos »
+        file: src/a-propos.md
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { name: layout, widget: hidden, default: layouts/about.njk }
+          - { name: section, widget: hidden, default: apropos }
+          - { name: permalink, widget: hidden, default: /a-propos/ }
+          - { label: Présentation du site, name: body, widget: markdown }
+          - label: Liens de contact
+            name: contact
+            widget: list
+            required: false
+            hint: "Pour une adresse e-mail, écrire mailto:adresse@exemple.fr"
+            fields:
+              - { label: Texte, name: label, widget: string }
+              - { label: Adresse, name: url, widget: string }
+          - label: Liens utiles
+            name: liens
+            widget: list
+            required: false
+            fields:
+              - { label: Texte, name: label, widget: string }
+              - { label: Adresse, name: url, widget: string }
+              - { label: Description, name: description, widget: string, required: false }
+      - name: reglages
+        label: Réglages du site
+        file: src/_data/site.json
+        fields:
+          - { label: Nom du blog, name: name, widget: string }
+          - label: Style du site
+            name: theme
+            widget: select
+            options:
+              - { label: Actuel (vert sauge), value: defaut }
+              - { label: Blanc épuré, value: blanc }
+              - { label: Blanc arrondi, value: blanc-arrondi }
+              - { label: Pastel zen, value: pastel }
+              - { label: Moderne, value: moderne }
+              - { label: Coloré, value: joyeux }
+          - { label: Slogan, name: tagline, widget: string }
+          - { label: "Adresse publique du site (https://…, sans / final)", name: url, widget: string, required: false }
+          - { label: "Masquer le site des moteurs de recherche (à désactiver au lancement)", name: noindex, widget: boolean, default: true }
+          - { label: Description (pour Google et les réseaux), name: description, widget: text }
+          - { label: Auteur, name: author, widget: string }
+          - { label: "Message en bas de chaque page (une phrase par ligne)", name: disclaimer, widget: text }

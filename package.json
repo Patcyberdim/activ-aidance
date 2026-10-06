@@ -1,0 +1,14 @@
+{
+  "name": "blog-papa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blog sur la santé mentale, l'accompagnement et l'éducation",
+  "scripts": {
+    "start": "eleventy --serve --port=8090",
+    "build": "eleventy",
+    "cms": "npx decap-server"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

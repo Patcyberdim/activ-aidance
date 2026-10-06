@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: Articles
+section: articles
+pagination:
+  data: collections.articles
+  size: 6
+  alias: posts
+permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+<div class="narrow">
+  <h1 class="sr-only">Articles</h1>
+
+  {%- if posts.length %}
+  <div class="card-list">
+    {%- for post in posts %}
+    {% include "partials/card.njk" %}
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <p>Aucun article pour le moment.</p>
+  {%- endif %}
+
+  {%- if pagination.pages.length > 1 %}
+  <nav class="pager pager-pages" aria-label="Pagination">
+    {%- if pagination.href.previous %}
+    <a class="pager-prev" href="{{ pagination.href.previous }}"><span>←</span> Articles plus récents</a>
+    {%- endif %}
+    <span class="pager-count">Page {{ pagination.pageNumber + 1 }} sur {{ pagination.pages.length }}</span>
+    {%- if pagination.href.next %}
+    <a class="pager-next" href="{{ pagination.href.next }}">Articles plus anciens <span>→</span></a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</div>
