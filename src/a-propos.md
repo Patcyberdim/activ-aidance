@@ -20,6 +20,13 @@ liens:
   - label: Association Française des Aidants
     url: https://www.aidants.fr
     description: Ressources et soutien pour les proches aidants.
+  - label: Santé mentale info service
+    url: https://www.santementale-info-service.fr/
+    description: Le portail officiel d'information et d'orientation dédié à la santé
+      mentale. Grâce à des contenus simples et validés par des experts, il
+      propose des conseils pour prendre soin de sa santé mentale, des
+      informations sur les différents signes de souffrance psychique et des
+      ressources pour se faire aider ou aider un proche.
 ---
 Bienvenue sur ce blog dans lequel je partage des informations sur la santé mentale et sur la proche-aidance.
 
