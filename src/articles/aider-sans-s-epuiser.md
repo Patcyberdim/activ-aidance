@@ -47,19 +47,17 @@ Il doit s'imposer des **limites**, mettre en place des **garde-barrières** pour
 
 Prendre soin de soi n'est pas un luxe : c'est ce qui permet d'accompagner dans la durée. Pour cela, il faut mettre en place des règles simples mais indispensables :
 
-* Prévoir chaque semaine un moment qui n'appartient qu'à soi : prendre du repos, sortir, rencontrer des amis, faire du sport ou avoir une activité culturel ou de loisir, se faire plaisir de temps en temps
-* Accepter l'aide proposée, même modeste : se faire aider par des membres de sa famille, des amis, trouver des aides, de l'assistance auprès de structures spécialisées, prendre conseil auprès de professionnels, etc.
-* En parler avec d'autres personnes qui vivent la même situation : rejoindre des associations de personnes qui partagent les mêmes difficultés.
-* Se former, apprendre : suivre une formation, des cours dans la mesure du possible, lire des livres concernant la maladie dont souffre votre proche, assister à des conférences, des webinaires, etc.
+* Prévoir chaque semaine **un moment qui n'appartient qu'à soi** : prendre du repos, sortir, rencontrer des amis, faire du sport ou avoir une activité culturel ou de loisir, se faire plaisir de temps en temps
+* **Accepter l'aide proposée**, même modeste : se faire aider par des membres de sa famille, des amis, trouver des aides, de l'assistance auprès de structures spécialisées, prendre conseil auprès de professionnels, etc.
+* En **parler avec d'autres personnes** qui vivent la même situation : rejoindre des associations de personnes qui partagent les mêmes difficultés.
+* **Se former, apprendre** : suivre une formation, des cours dans la mesure du possible, lire des livres concernant la maladie dont souffre votre proche, assister à des conférences, des webinaires, etc.
 
 ## Pour conclure
 
-Au-delà des difficultés rencontrées par l'aidant et de sa souffrance, ne faut-il pas porter un regard différent en se dégageant des problématiques quotidiennes, en prenant du recul et en comprenant ce que le statut d'aidant peut nous apporter. Car être aidant, c'est une expérience enrichissante, belle, unique et qui peut être gratifiante.  
+Au-delà des difficultés rencontrées par l'aidant et de sa souffrance, ne faut-il pas porter un regard différent en se dégageant des problématiques quotidiennes, en prenant du recul et en comprenant ce que le statut d'aidant peut nous apporter. Car être aidant, c'est **une expérience enrichissante**, belle, unique et qui peut être gratifiante.  
 
-Faut-il pour autant adopter la "*philosophie de l'absurde*" d'Albert Camus qui nous dit dans son livre "*Le mythe de Sisyphe*" qu'il ne faut pas imaginer le bonheur dans la fin de la tâche - lorsque Sisyphe atteint le sommet et arrête de pousser la pierre, mais dans la lutte elle-même qui suffit à remplir un cœur d'homme ? L'aidant ne serait-il pas, comme Sisyphe, un "personnage absurde" par excellence qui symbolise tout à la fois révolte, liberté et passion et qui, malgré son destin, trouve une forme de libération dans son labeur incessant : « *il faut imaginer Sisyphe heureux* ».
+Faut-il pour autant adopter la "*philosophie de l'absurde*" d'Albert Camus qui nous dit dans son livre "*Le mythe de Sisyphe*" qu'il ne faut pas imaginer le bonheur dans la fin de la tâche - lorsque Sisyphe atteint le sommet et arrête de pousser la pierre, mais dans la lutte elle-même qui suffit à remplir un cœur d'homme ? L'aidant ne serait-il pas, comme Sisyphe, un "personnage absurde" par excellence qui symbolise tout à la fois révolte, liberté et passion et qui, malgré son destin, trouve une forme de libération dans son labeur incessant : « ***il faut imaginer Sisyphe heureux*** ».
 
 <https://fr.wikipedia.org/wiki/Philosophie_d%27Albert_Camus>
-
-
 
 ![Logo "Garanti sans IA"](/images/uploads/logo-sans-ia.png "Garanti sans IA")
