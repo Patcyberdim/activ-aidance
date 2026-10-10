@@ -1,25 +1,54 @@
 ---
 title: Aider sans s'épuiser, trouver sa juste place
 date: 2026-09-28
-theme: Accompagnement
+theme: Aidance
 etiquettes:
   - aidants
   - équilibre
   - épuisement
-summary: Accompagner un proche demande de l'énergie. Comment durer sans s'oublier soi-même ? (Article d'exemple.)
+summary: Aider un proche demande de l'énergie. Comment durer sans s'oublier soi-même ?
+image: https://www.ivoire-france.com/ddoc-30413422-a19f87032d256e78f72a0e734d465c49-1740664224.jpg
+imageAlt: Grande sculpture en bronze patiné d'Émile Grégoire (1871-1948)
+  représentant Sisyphe poussant son rocher en haut d'une colline
 ---
-*Article d'exemple : à remplacer ou supprimer depuis l'espace d'administration.*
+Le 6 octobre prochain a lieu la journée nationale des aidants autour du thème : "**Tous aidants**".
 
-Quand on accompagne un proche, on commence souvent par tout donner. Les journées s'organisent autour de lui, et nos propres besoins passent au second plan. Ce réflexe est naturel, mais il a un coût.
+Il s'agit de la 17ème édition, portée par le Collectif "Je t’Aide" : <https://associationjetaide.org/>
 
-## Reconnaître ses limites
+Cette association réunit des structures et des personnes qui œuvrent à rendre visible l'action des + de 10 millions de personnes engagées auprès de proches touchées par la maladie et/ou le handicap.
 
-Fatigue persistante, irritabilité, impression de ne plus avoir de temps pour soi : ce sont des signaux à écouter. Ils ne signifient pas que l'on aide mal, mais que l'on a besoin, à son tour, d'être soutenu.
+Quand on aide un proche, on se lance souvent à corps perdu en commençant par tout donner pour le soulager. On pense que nous avons l'énergie et le courage pour tenir le temps nécessaire. Les journées s'organisent autour de lui et, du coup, nos propres besoins passent au second plan. 
+
+Mais à long terme **cette situation est usante** : elle nous épuise, elle nous pousse à aller toujours plus en avant, elle arrive même à nous rendre irritable car nous avons l'impression de ne pas y arriver et de ne plus avoir de temps pour soi.
+
+Ce réflexe est naturel quand on aime la personne, mais il faut savoir qu'il a un coût.
+
+## Impuisance et frustration : accepter ses limites
+
+Être aidant c'est s'engager dans un parcours du combattant. C'est une lutte épuisante, sans fin presque.
+
+Elle me fait penser au **mythe de Sisyphe** car être aidant c'est réaliser un "travail de Sisyphe" : une tâche qui semble ne jamais pouvoir être achevée ou qui est particulièrement difficile ou frustrante.
+
+<https://www.le-mont-olympe.com/blogs/top-histoires-mythe-mythologie-grecque/le-mythe-de-sisyphe-de-la-mythologie-grecque>
+
+Apporter son aide à un proche c'est aussi apprendre de nouvelles règles, de nouveaux savoirs. Car on ne peut pas aider une personne si on ne sait pas ce dont elle souffre, si on ne sait pas quelles formes d'aides et d'assistance existent déjà et peuvent lui être proposées, si on ne sait pas non plus comment la protéger (sur le plan matériel, juridique ou médical).
+
+Si je reprends encore la mythologie grecque et une métaphore : être aidant c'est comme effectuer **les 12 travaux d'Hercule**. Il faut toujours en faire plus, toujours aller plus loin et, parfois, encore recommencer. Au bout d'un certain temps l'impuissance et la frustration nous submergent. Elles touchent également nos proches quand ils ont conscience de leur état car elles sont la traduction de leur propre souffrance. 
+
+Finalement, l'aidant et le proche sont souvent semblables dans leur difficulté à vivre du fait qu'ils partagent des états émotionnels similaires.
+
+A la longue une fatigue persistante, un épuisement et une irritabilité s'installent. Il ne faut pas les ignorer ou tout laisser tomber. Il faut percevoir ces **signaux** qu'il faut écouter. Ils ne signifient pas que l'on est faible, que l'on aide mal. Ils signifient qu'il faut faire attention, qu'il faut ralentir et que l'aidant peut avoir besoin, à son tour, de soutien.
+
+Il doit s'imposer des **limites**, mettre en place des **garde-barrières** pour ne pas chuter, se faire bousculer par la vie. 
 
 ## Garder des repères simples
 
-- Prévoir chaque semaine un moment qui n'appartient qu'à soi.
-- Accepter l'aide proposée, même modeste.
-- En parler avec d'autres personnes qui vivent la même situation.
+* Prévoir chaque semaine un moment qui n'appartient qu'à soi.
+* Accepter l'aide proposée, même modeste.
+* En parler avec d'autres personnes qui vivent la même situation.
 
 Prendre soin de soi n'est pas un luxe : c'est ce qui permet d'accompagner dans la durée.
+
+Enfin, pour conclure, il faut également prendre du recul et savoir interpréter le statut d'aidant. Car être aidant, c'est une expérience enrichissante, unique et qui peut être gratifiante.  
+
+Albert Camus ne dit-il pas
