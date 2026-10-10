@@ -41,14 +41,17 @@ A la longue une fatigue persistante, un épuisement et une irritabilité s'insta
 
 Il doit s'imposer des **limites**, mettre en place des **garde-barrières** pour ne pas chuter, se faire bousculer par la vie. 
 
-## Garder des repères simples
+## Garder des repères simples et accepter sa situation
 
-* Prévoir chaque semaine un moment qui n'appartient qu'à soi.
-* Accepter l'aide proposée, même modeste.
-* En parler avec d'autres personnes qui vivent la même situation.
+Prendre soin de soi n'est pas un luxe : c'est ce qui permet d'accompagner dans la durée. Pour cela, il faut mettre en place des règles simples mais indispensables :
 
-Prendre soin de soi n'est pas un luxe : c'est ce qui permet d'accompagner dans la durée.
+* Prévoir chaque semaine un moment qui n'appartient qu'à soi : prendre du repos, sortir, rencontrer des amis, faire du sport ou avoir une activité culturel ou de loisir, se faire plaisir de temps en temps
+* Accepter l'aide proposée, même modeste : se faire aider par des membres de sa famille, des amis, trouver des aides, de l'assistance auprès de structures spécialisées, prendre conseil auprès de professionnels, etc.
+* En parler avec d'autres personnes qui vivent la même situation : rejoindre des associations de personnes qui partagent les mêmes difficultés.
+* Se former, apprendre : suivre une formation, des cours dans la mesure du possible, lire des livres concernant la maladie dont souffre votre proche, assister à des conférences, des webinaires, etc.
 
 Enfin, pour conclure, il faut également prendre du recul et savoir interpréter le statut d'aidant. Car être aidant, c'est une expérience enrichissante, unique et qui peut être gratifiante.  
 
-Albert Camus ne dit-il pas
+Faut-il pour autant adopter la "*philosophie de l'absurde*" d'Albert Camus qui nous dit dans son livre "*Le mythe de Sisyphe*" qu'il ne faut pas imaginer le bonheur dans la fin de la tâche - lorsque Sisyphe atteint le sommet et arrête de pousser la pierre, mais dans la lutte elle-même qui suffit à remplir un cœur d'homme ? L'aidant ne serait-il pas, comme Sisyphe, un "personnage absurde" par excellence qui symbolise tout à la fois révolte, liberté et passion et qui, malgré son destin absurde, trouve une forme de libération dans son labeur incessant : « *il faut imaginer Sisyphe heureux* ».
+
+<https://fr.wikipedia.org/wiki/Philosophie_d%27Albert_Camus>
