@@ -1,14 +1,15 @@
 ---
-title: Aider sans s'épuiser, trouver sa juste place
+title: Aider sans s'épuiser, trouver sa juste place - Journée des aidants
 date: 2026-09-28
 theme: Aidance
 etiquettes:
   - aidants
-  - équilibre
+  - évènement
   - épuisement
+  - équilibre
   - philosophie
 summary: Aider un proche demande de l'énergie et de la constance. Comment durer
-  sans s'oublier soi-même ?
+  sans s'oublier soi-même ? La journée des aidants est l'occasion d'en parler.
 image: https://www.ivoire-france.com/ddoc-30413422-a19f87032d256e78f72a0e734d465c49-1740664224.jpg
 imageAlt: Grande sculpture en bronze patiné d'Émile Grégoire (1871-1948)
   représentant Sisyphe poussant son rocher en haut d'une colline
