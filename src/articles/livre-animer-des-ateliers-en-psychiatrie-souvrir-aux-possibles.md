@@ -9,6 +9,7 @@ etiquettes:
   - techniques
   - témoignages
 summary: ""
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0oUPi8ovdAva9j7DMoHQwRyikoS8adefWpwoLuDnkA&s=10
 ---
 J'ai rencontré l'auteure du livre, Aurélie Naulet, au cours d'une réunion au Conseil Local de la Santé Mentale (CLSM) du Grand Libournais. 
 
