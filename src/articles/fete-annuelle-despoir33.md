@@ -13,4 +13,8 @@ ESPOIR33 est une association, créée en 19.. et située en Gironde. Son but est
 
 Lorem ipsum....
 
-Chaque année, l'association réunit l'ensemble de ses adhérents, de ses professionnels, des bénévoles et des proches-aidants de l'association.
+<https://espoir33.fr/>
+
+Chaque année, l'association réunit l'ensemble de ses adhérents, de ses professionnels, des bénévoles et des proches-aidants de l'association. 
+
+C'est l'occasion pour ses membres de se retrouver tous ensemble au siège de l'association.
