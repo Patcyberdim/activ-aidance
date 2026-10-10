@@ -1,8 +1,19 @@
 {
   "themes": [
-    { "nom": "Santé mentale" },
-    { "nom": "Accompagnement" },
-    { "nom": "Éducation et apprentissage" },
-    { "nom": "Culture" }
+    {
+      "nom": "Santé mentale"
+    },
+    {
+      "nom": "Accompagnement"
+    },
+    {
+      "nom": "Culture"
+    },
+    {
+      "nom": "Éducation et apprentissage"
+    },
+    {
+      "nom": "Aidance"
+    }
   ]
 }
