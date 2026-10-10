@@ -38,7 +38,7 @@ Apporter son aide à un proche c'est aussi apprendre de nouvelles règles, de no
 
 Si je reprends encore la mythologie grecque et une métaphore : être aidant c'est comme effectuer **les 12 travaux d'Hercule**. Il faut toujours en faire plus, toujours aller plus loin et, parfois, encore recommencer. Au bout d'un certain temps l'impuissance et la frustration nous submergent. Elles touchent également nos proches quand ils ont conscience de leur état car elles sont la traduction de leur propre souffrance. 
 
-Finalement, l'aidant et le proche sont souvent semblables dans leur difficulté à vivre du fait qu'ils partagent des états émotionnels similaires.
+Finalement, l'aidant et le proche sont souvent semblables dans leur difficulté à vivre du fait qu'ils partagent des états émotionnels pouvant être, parfois, similaires.
 
 A la longue une fatigue persistante, un épuisement et une irritabilité s'installent. Il ne faut pas les ignorer ou tout laisser tomber. Il faut percevoir ces **signaux** qu'il faut écouter. Ils ne signifient pas que l'on est faible, que l'on aide mal. Ils signifient qu'il faut faire attention, qu'il faut ralentir et que l'aidant peut avoir besoin, à son tour, de soutien.
 
