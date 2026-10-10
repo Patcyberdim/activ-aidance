@@ -15,13 +15,12 @@ liens:
     description: Information claire et fiable sur la santé mentale.
   - label: Unafam
     url: https://www.unafam.org
-    description: Association d'accompagnement des familles confrontées aux troubles psychiques.
+    description: Association d'accompagnement des familles confrontées aux troubles
+      psychiques.
   - label: Association Française des Aidants
     url: https://www.aidants.fr
     description: Ressources et soutien pour les proches aidants.
 ---
-Bienvenue sur ce blog.
+Bienvenue sur ce blog dans lequel je partage des informations sur la santé mentale et sur la proche-aidance.
 
-J'y partage mes réflexions et mon expérience sur la santé mentale, sur le rôle d'accompagnant, sur l'éducation et l'apprentissage, ainsi que sur des lectures et des films qui m'ont marqué.
-
-*Ce texte est un exemple : il se modifie depuis l'espace d'administration, dans la section « À propos ».*
+J'y parle de mes expériences, de mes découvertes, de mes rencontres et de mes échanges avec des personnes qui, comme moi, sont proches-aidants d'une personne souffrant de troubles psy ainsi qu'avec des professionnels de la santé mentale.
