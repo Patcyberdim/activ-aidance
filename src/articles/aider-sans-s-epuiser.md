@@ -6,6 +6,7 @@ etiquettes:
   - aidants
   - équilibre
   - épuisement
+  - philosophie
 summary: Aider un proche demande de l'énergie. Comment durer sans s'oublier soi-même ?
 image: https://www.ivoire-france.com/ddoc-30413422-a19f87032d256e78f72a0e734d465c49-1740664224.jpg
 imageAlt: Grande sculpture en bronze patiné d'Émile Grégoire (1871-1948)
